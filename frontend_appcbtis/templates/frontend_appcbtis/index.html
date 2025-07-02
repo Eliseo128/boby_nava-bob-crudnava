@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Cbtis 128</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body class="d-flex flex-column min-vh-100 ">
+    <!-- Include the navbar template -->
+
+    {% include 'frontend_appcbtis/navbar.html' %}
+    <!-- Fin navbar     -->
+    <!-- tarjetaTabla -->
+     {% include 'frontend_appcbtis/card_tabla_alu.html' %}
+
+    <!-- Fin tarjetaTabla -->
+    <!-- Pie de pagina -->
+    {% include 'frontend_appcbtis/pie_pagina.html' %}
+    <!-- Fin pie de pagina -->
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
